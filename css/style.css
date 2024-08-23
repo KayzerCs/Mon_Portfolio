@@ -69,7 +69,6 @@ header {
   display: flex;
   height: 75vh;
   width: 100%;
-  /* background: #000; */
 }
 .section-1 {
   width: 100%;
@@ -517,7 +516,7 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent; /* Nécessaire pour masquer la couleur d'origine */
+  color: transparent; 
 }
 
 /* -------------------------- CV -------------------------- */
@@ -539,7 +538,7 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent; /* Nécessaire pour masquer la couleur d'origine */
+  color: transparent; 
 }
 
 .container-education {
@@ -589,6 +588,7 @@ footer {
   padding: 15px;
   border-radius: 10px;
   background-color: #f7f7f7;
+  box-sizing: border-box;
 }
 
 .experience-info p {
@@ -639,7 +639,7 @@ footer {
 
 .skills-header i {
   font-size: 1.5rem;
-  color: #6f42c1; /* Violet du gradient */
+  color: #6f42c1; 
   background: linear-gradient(90deg, #8e44ad, #3498db);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -690,7 +690,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   height: auto;
-  flex-direction: row; /* Conserver la direction row même en mode responsive */
+  flex-direction: row;
 }
 
 .project-content {
@@ -715,7 +715,7 @@ footer {
   margin-top: 35px;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  word-break: break-all; /* Force la coupure du mot si nécessaire */
+  word-break: break-all;
 }
 
 .link-github a {
@@ -725,7 +725,7 @@ footer {
   display: inline-block;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  word-break: break-all; /* Force la coupure du mot si nécessaire */
+  word-break: break-all;
 }
 
 .project-image {
@@ -786,7 +786,7 @@ footer {
 }
 
 .container-icon-contact .show-icon {
-  display: inline-block; /* ou block selon tes besoins */
+  display: inline-block;
 }
 
 .fa-envelope,
@@ -821,13 +821,13 @@ form {
 
 input,
 textarea {
-  width: 100%; /* Les champs prennent toute la largeur disponible */
+  width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 14px;
   outline: none;
-  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+  box-sizing: border-box;
 }
 
 textarea {
@@ -837,19 +837,19 @@ textarea {
 
 input.error,
 textarea.error {
-  border: 2px solid red; /* Bordure rouge pour les champs en erreur */
+  border: 2px solid red;
 }
 
 .error-message {
   color: red;
   font-size: 0.875rem;
   margin-bottom: 15px;
-  display: none; /* Caché par défaut */
+  display: none;
 }
 
 input.error + .error-message,
 textarea.error + .error-message {
-  display: block; /* Affiche le message d'erreur si le champ a la classe 'error' */
+  display: block;
 }
 
 button {
@@ -860,8 +860,8 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  width: 100%; /* Assure que le bouton prend toute la largeur disponible */
-  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 button:hover {
@@ -898,7 +898,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto; /* Ajuster la hauteur pour mieux gérer le contenu */
+    height: auto;
     margin-top: 100px;
     margin-bottom: 100px;
   }
@@ -918,12 +918,12 @@ button:hover {
   .container-span-sec1 {
     margin-top: 0;
     margin-bottom: 2%;
-    text-align: center; /* Centre le texte */
+    text-align: center;
   }
 
   h1,
   .span2-sec1 {
-    text-align: center; /* Centre le texte */
+    text-align: center;
   }
   .span2-sec1 {
     font-size: 2rem;
@@ -932,18 +932,18 @@ button:hover {
   .buttons-sec1 {
     margin-top: 25px;
     margin-bottom: 55px;
-    gap: 50px; /* Espacement entre les boutons */
+    gap: 50px;
     align-items: center;
   }
 
   .btn-sec1 {
-    margin: 0; /* Évite le décalage des boutons */
-    width: 50%; /* Largeur ajustée pour s'adapter à l'écran */
-    max-width: 300px; /* Empêche les boutons de devenir trop larges */
+    margin: 0;
+    width: 50%;
+    max-width: 300px;
   }
 
   .profile {
-    margin: 20px 0; /* Ajoute de l'espace au-dessus et en dessous de la photo */
+    margin: 20px 0;
     width: 50%;
     min-width: 340px;
     height: 550px;
@@ -968,7 +968,7 @@ button:hover {
   .project-content {
     width: calc(
       100% - 250px
-    ); /* Assure que le contenu prenne toute la largeur disponible moins l'image */
+    );
     padding: 20px;
     border-right: none;
   }
@@ -996,7 +996,7 @@ button:hover {
     font-size: 0.8rem;
   }
   .profile {
-    margin: 20px 0; /* Ajoute de l'espace au-dessus et en dessous de la photo */
+    margin: 20px 0;
     width: 50%;
     min-width: 230px;
     height: 350px;
@@ -1019,8 +1019,9 @@ button:hover {
     margin: -55px 0px;
   }
   .experience-info {
-    width: 94%;
     margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
   }
   .experience-card {
     flex-direction: column;
