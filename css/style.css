@@ -689,7 +689,8 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  height: 100%;
+  height: auto;
+  flex-direction: row; /* Conserver la direction row même en mode responsive */
 }
 
 .project-content {
@@ -712,12 +713,19 @@ footer {
 
 .link-github {
   margin-top: 35px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all; /* Force la coupure du mot si nécessaire */
 }
 
 .link-github a {
   background: linear-gradient(90deg, #8e44ad, #3498db);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: inline-block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all; /* Force la coupure du mot si nécessaire */
 }
 
 .project-image {
@@ -728,6 +736,11 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  transition: opacity 0.5s ease, max-width 0.5s ease, max-height 0.5s ease;
+  opacity: 1;
+  max-height: 500px;
+  max-width: 250px;
+  overflow: hidden;
 }
 
 /* -------------------------- CONTACT -------------------------- */
@@ -941,6 +954,28 @@ button:hover {
   .h3-footer {
     font-size: 1rem;
     font-weight: 600;
+  }
+}
+
+@media (max-width: 940px) {
+  .project-image {
+    opacity: 0;
+    max-height: 0;
+    max-width: 0;
+    transition: opacity 0.5s ease, max-width 0.5s ease, max-height 0.5s ease;
+  }
+
+  .project-content {
+    width: calc(
+      100% - 250px
+    ); /* Assure que le contenu prenne toute la largeur disponible moins l'image */
+    padding: 20px;
+    border-right: none;
+  }
+
+  .section-main-projets {
+    margin: -75px;
+    transition: margin 0.5s ease;
   }
 }
 
