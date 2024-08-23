@@ -1016,6 +1016,11 @@ button:hover {
 
   .container-main-cv {
     margin-top: -55px;
+    margin: -55px 0px;
+  }
+  .experience-info {
+    width: 94%;
+    margin-bottom: 10px;
   }
   .experience-card {
     flex-direction: column;
