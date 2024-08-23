@@ -28,6 +28,7 @@ body {
 
 main {
   padding: 1% 15%;
+  transition: all 0.5s ease;
 }
 /* -------------------------- HOME -------------------------- */
 
@@ -852,4 +853,143 @@ button {
 
 button:hover {
   background: var(--purpleblue);
+}
+
+/* -------------------------- RESPONSIVE -------------------------- */
+
+@media (max-width: 1430px) {
+  main {
+    padding: 1% 5%;
+  }
+}
+
+@media (max-width: 1110px) {
+  header {
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 180px;
+  }
+
+  .span2-sec1 {
+    font-size: 2rem;
+  }
+
+  .profile {
+    height: 450px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 1000px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Ajuster la hauteur pour mieux gérer le contenu */
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .section-1,
+  .section-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-sec1 {
+    text-align: center;
+  }
+
+  .container-span-sec1 {
+    margin-top: 0;
+    margin-bottom: 2%;
+    text-align: center; /* Centre le texte */
+  }
+
+  h1,
+  .span2-sec1 {
+    text-align: center; /* Centre le texte */
+  }
+  .span2-sec1 {
+    font-size: 2rem;
+  }
+
+  .buttons-sec1 {
+    margin-top: 25px;
+    margin-bottom: 55px;
+    gap: 50px; /* Espacement entre les boutons */
+    align-items: center;
+  }
+
+  .btn-sec1 {
+    margin: 0; /* Évite le décalage des boutons */
+    width: 50%; /* Largeur ajustée pour s'adapter à l'écran */
+    max-width: 300px; /* Empêche les boutons de devenir trop larges */
+  }
+
+  .profile {
+    margin: 20px 0; /* Ajoute de l'espace au-dessus et en dessous de la photo */
+    width: 50%;
+    min-width: 340px;
+    height: 550px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .h3-footer {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 680px) {
+  .title-navbar {
+    font-size: 0.8rem;
+  }
+  .liste-navbar {
+    gap: 15px;
+  }
+  .nav-item {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+  .profile {
+    margin: 20px 0; /* Ajoute de l'espace au-dessus et en dessous de la photo */
+    width: 50%;
+    min-width: 230px;
+    height: 350px;
+  }
+  .dots-ex {
+    width: 8px;
+    height: 8px;
+  }
+  .dots-int {
+    width: 8px;
+    height: 8px;
+  }
+  .h3-footer {
+    text-align: center;
+    padding: 0% 5%;
+  }
+}
+
+@media (max-width: 390px) {
+
+  header {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+ .container-title-navbar {
+  padding-top: 10px;
+ }
+ .span1-sec1 {
+  font-size: 0.8rem;
+ }
+ .liste-navbar {
+  padding-left: 20px;
+  gap: 10px;
+ }
 }
