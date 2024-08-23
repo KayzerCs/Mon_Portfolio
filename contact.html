@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Maxime Lorant</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <nav class="navbar">
+        <div class="container-navbar">
+          <a class="container-title-navbar" href="index.html"
+            ><span class="title-navbar">Développeur Web</span></a
+          >
+          <ul class="liste-navbar">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="projets.html">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="section-contact">
+        <div class="contact-form">
+          <div class="form-header">
+            <div class="container-icon-contact">
+              <i class="fa-regular fa-envelope show-icon"></i>
+              <i class="fa-solid fa-check hide-icon"></i>
+            </div>
+            <h1>Entrer en contact</h1>
+            <p>Travaillons ensemble !</p>
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="from_name"
+                placeholder="Nom et prénom"
+              />
+              <div class="error-message">Un nom est requis.</div>
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="from_email"
+                placeholder="Adresse email"
+              />
+              <div class="error-message" id="email-required-error">
+                Une adresse email est requise.
+              </div>
+              <div class="error-message" id="email-invalid-error">
+                L'email n'est pas valide.
+              </div>
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                id="phone"
+                name="from_phone"
+                placeholder="Numéro de téléphone"
+              />
+              <div class="error-message">
+                Un numéro de téléphone est requis.
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message"
+              ></textarea>
+              <div class="error-message">Un message est requis.</div>
+            </div>
+            <button type="submit">Soumettre</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "6ZPh1hBWBBSwOyqFc",
+        });
+      })();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
