@@ -945,6 +945,11 @@ button:hover {
 }
 
 @media (max-width: 680px) {
+  header {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
   .title-navbar {
     font-size: 0.8rem;
   }
@@ -973,23 +978,50 @@ button:hover {
     text-align: center;
     padding: 0% 5%;
   }
+
+  .container-main-cv {
+    margin-top: -55px;
+  }
+  .experience-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .experience-description {
+    width: 90%;
+  }
+}
+
+@media (max-width: 490px) {
+  .container-education h2 {
+    font-size: 1.3rem;
+  }
+  .container-education a {
+    font-size: 0.8rem;
+  }
+  .btn-download-cv {
+    padding: 10px;
+  }
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 
 @media (max-width: 390px) {
-
   header {
     margin-top: 0px;
     margin-bottom: 10px;
   }
 
- .container-title-navbar {
-  padding-top: 10px;
- }
- .span1-sec1 {
-  font-size: 0.8rem;
- }
- .liste-navbar {
-  padding-left: 20px;
-  gap: 10px;
- }
+  .container-title-navbar {
+    padding-top: 10px;
+  }
+  .span1-sec1 {
+    font-size: 0.8rem;
+  }
+  .liste-navbar {
+    padding-left: 25px;
+    gap: 15px;
+  }
 }
