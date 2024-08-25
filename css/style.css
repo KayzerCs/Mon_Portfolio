@@ -30,6 +30,7 @@ main {
   padding: 1% 15%;
   transition: all 0.5s ease;
 }
+
 /* -------------------------- HOME -------------------------- */
 
 /* -- Navbar -- */
@@ -470,16 +471,16 @@ h1 {
   right: 10px;
 }
 
-/* Footer */
+/* Section about */
 
-footer {
+.section-about {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: var(--bg-grey);
 }
 
-.h2-footer {
+.h2-about {
   font-size: 2rem;
   font-weight: 900;
   background: var(--purpleblue);
@@ -488,20 +489,20 @@ footer {
   background-clip: text;
 }
 
-.h3-footer {
+.h3-about {
   margin-top: -5px;
   font-size: 1.5rem;
   font-weight: 200;
 }
 
-.span-footer {
+.span-about {
   margin: 0% 25%;
   font-size: 1rem;
   font-weight: 300;
   text-align: center;
 }
 
-.container-icons-footer {
+.container-icons-about {
   margin-top: 1.5%;
   width: 25%;
   display: flex;
@@ -510,13 +511,13 @@ footer {
   gap: 10%;
 }
 
-.icons-footer {
+.icons-about {
   font-size: 3rem;
   background: var(--purpleblue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent; 
+  color: transparent;
 }
 
 /* -------------------------- CV -------------------------- */
@@ -538,7 +539,7 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent; 
+  color: transparent;
 }
 
 .container-education {
@@ -639,7 +640,7 @@ footer {
 
 .skills-header i {
   font-size: 1.5rem;
-  color: #6f42c1; 
+  color: #6f42c1;
   background: linear-gradient(90deg, #8e44ad, #3498db);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -752,6 +753,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .contact-form {
@@ -868,11 +870,78 @@ button:hover {
   background: var(--purpleblue);
 }
 
+/* -- Footer -- */
+
+footer {
+  background: var(--bg-grey);
+  padding: 10px 25px 2px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+.mentions {
+  font-size: 0.8rem;
+}
+
+/* -------------------------- MENTIONS LÉGALES -------------------------- */
+
+.body-mentions {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container-mentions {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.h1-mentions {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.h2-mentions {
+  color: #333;
+  margin-top: 20px;
+}
+
+.p-mentions {
+  margin-bottom: 15px;
+}
+
+.a-mentions {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.a-mentions:hover {
+  text-decoration: underline;
+}
+
 /* -------------------------- RESPONSIVE -------------------------- */
 
 @media (max-width: 1430px) {
   main {
     padding: 1% 5%;
+  }
+
+  .container-mentions {
+    max-width: 90%;
+    margin: 40px auto;
+  }
+  .h1-mentions {
+    font-size: 1.8em;
   }
 }
 
@@ -890,6 +959,18 @@ button:hover {
   .profile {
     height: 450px;
     width: 350px;
+  }
+
+  .container-mentions {
+    max-width: 85%;
+  }
+
+  .h1-mentions {
+    font-size: 1.6em;
+  }
+
+  .p-mentions {
+    font-size: 1em;
   }
 }
 
@@ -948,12 +1029,22 @@ button:hover {
     min-width: 340px;
     height: 550px;
   }
-}
 
-@media (max-width: 1000px) {
-  .h3-footer {
+  .h3-about {
     font-size: 1rem;
     font-weight: 600;
+  }
+
+  .container-mentions {
+    max-width: 80%;
+  }
+
+  .h1-mentions {
+    font-size: 1.5em;
+  }
+
+  .h2-mentions {
+    font-size: 1.2em;
   }
 }
 
@@ -966,9 +1057,7 @@ button:hover {
   }
 
   .project-content {
-    width: calc(
-      100% - 250px
-    );
+    width: calc(100% - 250px);
     padding: 20px;
     border-right: none;
   }
@@ -976,6 +1065,22 @@ button:hover {
   .section-main-projets {
     margin: -75px;
     transition: margin 0.5s ease;
+  }
+
+  .container-mentions {
+    max-width: 75%;
+  }
+
+  .h1-mentions {
+    font-size: 1.4em;
+  }
+
+  .h2-mentions {
+    font-size: 1.1em;
+  }
+
+  .p-mentions {
+    font-size: 0.95em;
   }
 }
 
@@ -1009,7 +1114,7 @@ button:hover {
     width: 8px;
     height: 8px;
   }
-  .h3-footer {
+  .h3-about {
     text-align: center;
     padding: 0% 5%;
   }
@@ -1030,6 +1135,23 @@ button:hover {
   .experience-description {
     width: 90%;
   }
+
+  .container-mentions {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .h1-mentions {
+    font-size: 1.3em;
+  }
+
+  .h2-mentions {
+    font-size: 1em;
+  }
+
+  .p-mentions {
+    font-size: 0.9em;
+  }
 }
 
 @media (max-width: 490px) {
@@ -1046,6 +1168,34 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 15px;
+  }
+
+  footer {
+    padding: 10px 5px 2px 0px;
+  }
+  .copyright {
+    font-size: 0.7rem;
+  }
+
+  .container-mentions {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .h1-mentions {
+    font-size: 1.2em;
+  }
+
+  .h2-mentions {
+    font-size: 0.95em;
+  }
+
+  .p-mentions {
+    font-size: 0.85em;
+  }
+
+  .a-mentions {
+    font-size: 0.9em;
   }
 }
 
@@ -1064,5 +1214,25 @@ button:hover {
   .liste-navbar {
     padding-left: 25px;
     gap: 15px;
+  }
+
+  .container-mentions {
+    padding: 5px;
+  }
+
+  .h1-mentions {
+    font-size: 1.1em;
+  }
+
+  .h2-mentions {
+    font-size: 0.9em;
+  }
+
+  .p-mentions {
+    font-size: 0.8em;
+  }
+
+  .a-mentions {
+    font-size: 0.85em;
   }
 }
