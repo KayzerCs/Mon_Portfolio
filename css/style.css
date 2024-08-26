@@ -1260,4 +1260,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.nav-item {
+  font-size: 0.65rem;
+}
 }
