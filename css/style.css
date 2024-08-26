@@ -24,6 +24,7 @@ body {
   background: var(--bg-white);
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 main {
@@ -1139,7 +1140,7 @@ footer {
     align-items: flex-start;
   }
   .experience-description {
-    width: 100%;
+    width: 90%;
   }
 
   .container-mentions {
@@ -1249,4 +1250,14 @@ footer {
   .a-mentions {
     font-size: 0.85em;
   }
+}
+
+@media (max-width: 390px) {
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
 }
